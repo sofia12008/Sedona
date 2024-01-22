@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+
+ul{
+    @include list-none(); 
+}
+
+button{
+   @include button-none();
+}
+
+.visually-hidden{
+    position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  margin: -1px; 
+  padding: 0; 
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  overflow: hidden;
+}
+
+ img{
+    display: block;
+}
+
+.body-container{
+    max-width: 500px;
+    margin: 0 auto;
+    @media(min-width:$table-size){
+        max-width: none;
+    }
+}
+
+html{
+    overflow-x: hidden;
+}

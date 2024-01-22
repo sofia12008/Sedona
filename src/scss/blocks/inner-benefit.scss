@@ -1,0 +1,61 @@
+.inner-benefit__title {
+  color: #000;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.ineer-benefit__text {
+  color: #333;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+  text-transform: uppercase;
+overflow: hidden;
+}
+
+
+.inner-benefit{
+    position: relative;
+    &::before{ left: -47px;
+background-size: contain;
+
+        @include default-pseudo-element(40px);
+        @media(min-width: $table-size){
+            width: 74px;
+            height: 74px;
+            top: -115px;
+        @include centering-width-pseudo-element()
+        }
+    }
+    &--house::before{
+     background-image: url(./../../public/svg/Frame8.svg);
+    }
+    &--food::before{
+        background-image: url(./../../public/svg/Frame10.svg);
+    }
+    &--present::before{
+        background-image: url(./../../public/svg/Frame9.svg);
+    }
+
+}
+
+.inner-benefits{
+    padding: 31px 30px 52px 68px;
+
+    @media(min-width: $table-size){
+        display: flex;
+        gap: 70px;
+        text-align: center;
+        padding: 158px 35px 60px 35px;
+       
+        
+    }
+}

@@ -1,0 +1,49 @@
+.ca__title {
+  color: #000;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 123.81% */
+  text-transform: uppercase;
+}
+
+.ca__text {
+  color: #333;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ca__button {
+  background: #81b3d2;
+  color: #fff;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 123.81% */
+  text-transform: uppercase;
+  padding: 10px 0;
+width: 458px;
+height: 58px;
+margin: 0 auto;
+display: block;
+  
+ 
+}
+
+.ca__container{
+    padding: 40px 18px 50px;
+    @media (min-width: $table-size){
+      width: 435px;
+      margin: 0 auto;
+      padding:  60px 157px;
+    }
+    
+}
