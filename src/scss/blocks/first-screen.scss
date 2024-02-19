@@ -1,5 +1,5 @@
 .first-screen__data{
-  color: #000;
+  color:black;
 text-align: center;
 font-family: PT Sans;
 font-size: 21px;
@@ -15,7 +15,9 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  text-transform: uppercase;;
+  text-transform: uppercase;
+  padding:0 19px;
+  text-align: center;
 }
 
 .first-screen__picture {

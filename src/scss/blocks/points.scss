@@ -12,6 +12,8 @@
 .point__text-container {
   background: #81b3d2;
   padding: 50px 19px 40px;
+  color: black;
+
   &--tablet {
     @media (min-width: $table-size) {
       order: 2;
@@ -20,32 +22,38 @@
 }
 
 .point__text {
-  color: #fff;
+  color:white;
   text-align: center;
   font-family: PT Sans;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 4np00;
   line-height: 21px; /* 150% */
   text-transform: uppercase;
 }
 
 .point {
+  position: relative;
   &:first-of-type {
     &::before {
       @include default-pseudo-element(100vw, 37px);
+     background: url(./../../public/img/Group\ 4.svg);
+     left: 0;
+     right: 0;
+     background-size: cover;
     }
   }
   &--gray {
     background: #eee;
     & .point__text {
-      color: #000;
+      color: #333333;
     }
 
     & .points__title {
       color: #000;
     }
     & .point__text-container {
+      background-color: #EEEEEE;
       background: none;
       border-bottom: 1px solid #d6d6d6;
       padding-left: 0;
@@ -60,7 +68,7 @@
 }
 
 .point__picture {
-  width: 100%;
+  width:100vw;
   display: block;
   @media (min-width: $table-size) {
     height: 100%;
@@ -79,6 +87,12 @@
 }
 
 .point__container {
+  display: flex;
+  margin:0 auto;
+  width: fit-content;
+  gap: 7px;
+  align-items: center;
+  
   @media (min-width: $table-size) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -96,3 +110,5 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
