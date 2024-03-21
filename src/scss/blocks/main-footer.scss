@@ -14,6 +14,9 @@
   gap: 6px;
   justify-content: center;
   margin-bottom: 20px;
+  @media (min-width: $table-size){
+    margin: 0;
+  }
 }
 
 .main-footer__link {
@@ -31,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 36px 45px;
+
   }
 }
 
@@ -41,6 +45,9 @@
   margin: 0 auto;
   width: fit-content;
   gap: 7px;
+  @media (min-width: $table-size){
+    margin: 0;
+  }
 }
 .point-footer__text {
   text-align: center;
