@@ -36,7 +36,7 @@
 
 .point {
   position: relative;
-  &:first-of-type {
+  &--first {
     &::before {
    @media(max-width:$max-mobila-size) {
   
@@ -81,11 +81,11 @@
 }
 
 .point__picture {
-  width:100vw;
+  width:100%;
   display: block;
   @media (min-width: $table-size) {
     height: 100%;
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -98,10 +98,10 @@
   font-weight: 700;
   line-height: 26px; /* 144.444% */
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .point__container {
-  display: flex;
   margin:0 auto;
   
   align-items: center;
